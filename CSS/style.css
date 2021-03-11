@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+/* start: global styles */
+body {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.7;
+}
+
+* {
+    outline: none;
+}
+
+*:not(.slick-track):not(.slick-list) {
+    transition: 0.4s;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 0 20px
+}
+.flex{
+    display: flex;
+    justify-content: space-between
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+}
+h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem
+}
+
+h2{
+    font-size: 2.5rem ;
+    line-height: 1.2;
+    margin-bottom: 1rem
+}
+h3{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 1rem
+}
+h4{
+    font-size: 1.2rem;
+   font-weight: 300
+
+}
+h5{
+    font-size: 1rem;
+    font-family: "Playfair Display", serif;
+}
+
+p{  
+    margin: 0 0 1rem
+}
+.list-style{
+    list-style: none
+}
+button.rounded{
+    background-color: #f69314;
+    border-radius:30px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 30px;
+    line-height: 1.5;
+    cursor: pointer;
+
+}
+
+.large-paragraph{
+    font-size: 1.25rem;
+    font-weight: 300;
+
+}
+#header-hero-container{
+    min-height: 600px;
+    height: calc(100vh);
+    position: relative;
+}
+
+
+#logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: 8px 0;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    position: relative;
+    top: 10;
+    z-index: 10
+    
+}
+header{
+ border-bottom: 1px solid #999;
+ padding-bottom: 35px;
+position: relative;
+z-index: 10;
+position:fixed;
+width: 100%
+
+
+ 
+
+}
+#nav-toggle {
+    width: 35px;
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none
+  
+}
+#nav-toggle .strip{
+    display: block;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin: 4px 0;
+    cursor: pointer;
+    
+   
+}
+ul li {
+    display: inline-block;
+    margin: 0 10px
+}
+#nav-menu li a:hover,
+#nav-menu  a.active {
+    color: #fff;
+}
+
+#nav-menu a{
+    text-decoration: none ;
+    padding-left: 25px;
+    color: #999;
+    font-size: 16px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    text-transform: capitalize;
+    position: relative;
+    top: 10;
+    z-index: 10
+    
+}
+#close-flyout {
+    display: none;
+}
+#nav-menu ul.is-sticky li a:hover,
+#nav-menu ul.is-sticky li  a.active {
+    color: #f69314;
+}
+
+#hero {
+    background: url(https://onclickwebdesign.com/wp-content/uploads/hero_1.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+}
+#hero .fadeIN {
+    background: rgba(52, 58, 64, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#hero .hero-text {
+    max-width:500px;
+    text-align: center;
+    margin: auto ;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 2
+ }
+#hero .hero-text h1{
+    color: #fff;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+}
+#hero .hero-text p {
+    color: #fff;
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+}
+
+
+/*Start How it works section*/
+#How-it-works {
+    background-color: #f8f9fa;
+    padding: 50px 0
+}
+#How-it-works h2{
+    color: #f69314;
+    text-align: center;
+    text-transform: capitalize;
+   
+}
+#How-it-works h2:hover{
+    color: #500000;
+    cursor: pointer;
+}
+#How-it-works .flex > div{
+    text-align: center;
+
+}
+
+#How-it-works div span{
+    color: #f69314;
+    font-size: 2.5rem;
+    padding: 25px
+
+}
+
+#How-it-works div span:hover{
+    color: #500000;
+    
+}
+#How-it-works div h4 {
+    font-size:25px;
+    color: #000;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+}
+#How-it-works div p{
+    color: #999
+}
+
+/*End How it works section*/
+
+/*Start propreties*/
+/*Start propreties*/
+#propreties{
+    padding: 2.5rem;
+    position: relative
+
+}
+#propreties .container{
+        
+    position: relative
+
+}
+#propreties .container::before{
+    content: "/";
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    color: #999;
+}
+#propperties-slider a.slick-arrow{
+    color: #000;
+    text-transform: uppercase;
+    position: absolute;
+    top: -78px;
+    right: 0px;
+    text-decoration: none;
+    letter-spacing: 0.1rem
+
+}
+#propperties-slider a.slick-prev{
+    right: 80px
+}
+#propperties-slider .slick-slide{
+    padding: 0 15px
+}
+#propreties h2{
+    color: #f69314;;
+    margin-bottom: 3rem;
+    text-transform: capitalize
+}
+
+
+#propperties-slider > div{
+    width: 23%;
+    float: left;
+}
+#propperties-slider  div {
+   padding: 10px
+    
+}
+#propperties-slider div img{
+    width: 100%;
+    display: block
+}
+#propperties-slider .property-detailes {
+padding: 10px;
+
+}
+#propperties-slider .property-detailes .price {
+  margin: 0 0 1.2rem;
+   color: #323232;
+   font-size: 22px;
+   font-weight: 800
+}
+#propperties-slider .property-detailes span{
+    padding: 0 5px 0 0
+}
+
+#propperties-slider .property-detailes span.bath ,
+#propperties-slider .property-detailes span.beds{
+border-right: 1px solid #999
+}
+#propperties-slider .property-detailes address{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-style: normal
+}
+
+#propreties  button {
+    margin:15px auto 0;
+    display: block;
+    width: 350px;
+    font-weight: 600
+
+
+}
+#propreties  button:hover {
+    background-color: #500000
+}
+
+
+/*End propreties*/
+
+/*start agents*/
+#agents{
+    margin: 25px 0;
+
+}
+#agents h2{
+    color: #f69314;
+
+}
+#agents .large-paragraph{
+    width: 600px;
+    margin:40px 0;
+    color: #999
+}
+#agents .flex {
+    flex-wrap: wrap;
+    padding: 0;
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px; */
+}
+#agents .flex .card {
+    margin: 15px 0;
+    cursor: pointer;
+    max-width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none ;
+}
+#agents .flex .card img {
+    width: 100%;
+    height: 350px
+}
+#agents .flex .card div {
+   background-color: #eeeeee;
+   padding: 15px 13px
+   
+}
+
+
+#agents .flex .card div h3{
+    color: #000;
+    font-family:"Playfair Display", serif;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+
+/*end agents*/
+
+/*start thebest*/
+#the-best{
+    margin-top: 150px ;
+    padding: 100px;
+    border-top: 1px solid #999;
+}
+#the-best .felx  {
+    display: flex ;
+    
+}
+#the-best .felx  img {
+    width: 47%;
+}
+
+#the-best .felx  div {
+    max-width: 100%;
+    width: 40%;
+    margin:0 80px 0
+}
+
+#the-best .felx div h2{
+    color: #f69314
+}
+
+
+/*End thebest*/
+
+
+/*start services*/
+
+#services{
+background-color: #f8f9fa;
+border-bottom: 1px solid #dee2e6;
+padding:100px 0;
+text-align: center
+
+}
+
+#services h2 {
+ color: #f69314 ;
+ margin-bottom: 35px;
+}
+
+
+#services .flex  div {
+    max-width:  100%;
+    margin-bottom: 2rem;
+}
+
+
+
+#services .flex  div .fas {
+    color: #f69314;
+    font-size: 40px;
+    float: left;
+    margin-top: 15px;
+    width: 20%;
+  
+}
+
+#services .flex > div .services-card-right {
+    float: right;
+    width: 75%;
+    text-align: left;
+}
+
+#services .flex > div a {
+    text-decoration: none;
+    color:#f69314
+}
+#services .flex > div a:hover {
+    text-decoration: underline;
+    color:#500000
+}
+/*End services*/
+
+/*start testimonials*/
+#testimonials{
+   padding: 100px 0;
+   text-align: center ;
+   
+}
+
+#testimonials:after{
+    content: '>';
+    color: #000;
+    position: relative;
+    right: -600px;
+    top: -134px;;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#testimonials::before{
+    content: '<';
+    color: #000;
+    position: relative;
+    left: -600px;
+    top: 214px;;
+    font-size: 50px;
+    cursor: pointer;
+}
+#testimonials h2 {
+    color: #f69314;;
+    margin-bottom: 35px
+}
+#testimonials h2:hover {
+    color: #500000;
+    cursor: pointer;
+}
+#testimonial-slider blockquote {
+    font-style: italic;
+    font-size: 30px;
+    cursor: pointer;
+}
+#testimonial-slider .testimonial-caption {
+    position: absolute;
+    left: 50% ;
+    transform: translateX(-50%);
+   
+}
+#testimonial-slider .testimonial-caption img{
+    border-radius: 50%;
+    width: 50px;
+    float: left;
+    margin: 0 auto;
+    cursor: pointer;
+ 
+    
+}
+#testimonial-slider .testimonial-caption p{
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+/*End testimonials*/
+
+/* Start form*/
+#contact {
+    padding: 150px 0;
+    background-color: #eeee;
+}
+#contact h2 {
+    text-align: center;
+    color: #f69314;
+    margin-bottom: 50px
+}
+#contact .contact-form {
+    background-color: #fff;
+    max-width: 48%;
+    padding: 2rem;
+    margin-right:
+}
+#contact .contact-form label {
+   display: block;
+   font-size: 18px;
+   color: #000;
+   padding: 1.2rem 0 0 0
+   
+}
+#contact .contact-form input ,
+#contact .contact-form textarea{
+    width: 95%;
+    height: 50px;
+    border-radius:20px;
+    border: 1px solid  #ced4da;
+    color: #3B3737;
+    font-size: 15px
+    
+}
+#contact .contact-form textarea {
+    height: 170px;
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+ #address-container{
+    width: 30%;
+    background-color: #fff;
+    margin: px;
+    padding: rem;
+    height: 50%;
+    box-sizing: border-box
+}
+#contact #address-container label {
+    font-weight: 400;
+    font-size: 18px;
+    color: #5C5A5A;
+    display: block;
+    margin-top: 20px
+}
+#contact #address-container a {
+    text-decoration: none;
+    color: #f69314;
+    font-size: 17px
+}
+/* End form*/
+
+/*footer*/
+footer {
+    background: #333;
+    padding: 8rem 0;
+}
+
+footer .flex {
+    padding-bottom: 6rem;
+    border-bottom: 1px solid #777;
+}
+
+footer h5 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+footer h5.follow-us {
+    margin-top: 1rem;
+}
+
+footer .footer-about {
+    width: 47%;
+}
+
+footer .footer-about p {
+    width: 65%;
+}
+
+footer .footer-quick-links {
+    width: 16%;
+}
+
+footer .footer-quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-quick-links ul li {
+    margin: 10px 0;
+}
+
+footer .footer-quick-links ul li a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer .footer-quick-links ul li a:hover {
+    color: #fff;
+}
+
+footer .footer-subscribe {
+    width: 35%;
+}
+
+#subscribe-container {
+    position: relative;
+}
+
+footer .footer-subscribe input {
+    border-radius: 30px;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+footer button.right-rounded {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #f69314;
+    font-size: 16px;
+    color: #000;
+    padding: 10px 30px 9px;
+    line-height: 1.5;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+
+footer button.right-rounded:hover {
+    background: #fff;
+}
+
+footer .footer-subscribe ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-subscribe ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+footer .footer-subscribe ul li:first-child {
+    margin-left: 0;
+}
+
+footer .footer-subscribe ul li a {
+    text-decoration: none;
+    color: #777;
+}
+
+footer .footer-subscribe ul li a:hover {
+    color: #fff;
+}
+
+footer small {
+    margin-top: 3rem;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+
+footer small a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer small a:hover {
+    color: #fff;
+}
+/* end: footer styles */
+
+/*mdeia query*/
+#address-container{
+    margin: 0
+}
+@media (max-width : 991px) {
+
+        #logo {
+            top: 1px
+        }
+
+        #nav-toggle{
+            display: block;
+        }
+
+         #nav-menu {
+            position: fixed;
+            background-color: #fff;
+            height: calc(100vh);
+            top: 0;
+            right:0 ;
+            width: 300px;
+            margin: 0;
+            padding: 2rem;
+            box-sizing: border-box;
+            box-shadow: 5px 0 10px 3px #9999;
+            display: none
+        }
+        #close-flyout{
+            display: block;
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            color: #777;
+            cursor: pointer;
+            font-size: 30px
+        }
+        #nav-menu li a {
+            display: block;
+            text-align: left;
+            margin: 25px 0;
+            padding: 0;
+            color: #000;
+            font-size: 22px;
+
+        }#nav-menu li a:first-child{
+            color: #f69314
+        }
+        #nav-menu li a:hover {
+            color: #f69314
+        }
+        #agents .flex .card{
+            width:80%;
+            padding: 5px;
+            border: none;
+          
+        }
+    
+        
+}
+@media (max-width : 767px){
+            
+        h1{
+            font-size:2rem;
+
+        }
+
+        h2{
+            font-size: 1.75rem ;
+
+        }
+        h3{
+            font-size: 1.2rem;
+
+        }
+        h4{
+            font-size:0.7 rem   
+
+
+        }
+        .large-paragraph {
+            font-size: 1rem
+        }
+        p {
+            font-size:1.8rem;
+
+        }
+        .container {
+            max-width: 540px
+        }
+       #hero .hero-text{
+           width:500px
+       }
+       #agents .card {
+        width: 49%;
+    }
+    #the-best .felx  img {
+        display: none
+    }
+    
+        #the-best .felx  div {    
+             width: 100%
+        }
+        #testimonials p {
+            font-size :1.2rem
+        }
+        #propreties .container:before{
+            top: 2px;
+            font-size: 0.8rem
+        }
+            #properties-slider a.slick-arrow {
+            font-size: 0.85rem;
+        }
+
+        #properties button.rounded {
+        width: 300px;
+        }
+        #services .flex > div {
+        width: 48%;
+        }
+      .contact-form form {
+            width: 100%;
+            padding: 2rem;
+         
+        }
+        #address-container {
+            width: 100%;
+            margin-top: 2rem;
+           
+        }
+        #propperties-slider div  {
+            width: 100%
+        }
+        #agents .flex .car img{
+            
+        }
+        #agents .flex .card{
+            width:100%;
+            height: 100%;
+          
+        }
+        #the-best .felx div{
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            text-align: center
+        }
+        #the-best .felx div p{
+            font-size: 1.8rem;
+            font-weight: 400
+        }
+    
+        #services .flex > div {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+        }
+        #contact .contact-form {
+            max-width: 100%
+
+        }
+        footer .flex div{
+            max-width: 100%
+        }
+        footer .footer-about p {
+        width: 100%
+        }
+
+
+
+        
+}
+
